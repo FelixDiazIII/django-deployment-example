@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- <html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Index page</h1>
+  </body>
+</html> -->
+
+
+
+
+
+
+
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to Index!</h1>
+    <!-- <h2>Name: {{ name|upper }}</h2> -->
+    <h2>Name: {{ name|cut:'Gangca' }}</h2>
+    <h2>Employee No: {{ emp_id|add:"111111111" }}</h2>
+
+  {% endblock %}
